@@ -1,0 +1,25 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    <main>
+        
+        <div x-data="{ 
+            names: ['Malleus', 'Lillia', 'Carter', 'Diana', 'Fiona', 'Floyd', 'Grace', 'Henry', 'Iris', 'Jack'],
+            currentName: 'Click to generate a name'}">
+            <h1 x-text="currentName"></h1>
+            <button @click="currentName = names[Math.floor(Math.random() * names.length)]">
+                Generate Name
+            </button>
+        </div>
+
+    </main>
+    <footer><p>MI449 Exercise 2</p></footer>
+    
+</body>
+</html>

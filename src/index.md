@@ -1,3 +1,0 @@
----
-Title: Alpine.js exercise
----
