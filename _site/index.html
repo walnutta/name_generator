@@ -10,10 +10,10 @@
     <main>
         
         <div x-data="{ 
-            names: ['Malleus', 'Lillia', 'Carter', 'Diana', 'Fiona', 'Floyd', 'Grace', 'Henry', 'Iris', 'Jack'],
+            names: ['Malleus', 'Lilia', 'Carter', 'Diana', 'Fiona', 'Floyd', 'Teto', 'Miku', 'Epel'],
             currentName: 'Click to generate a name'}">
             <h1 x-text="currentName"></h1>
-            <button @click="currentName = names[Math.floor(Math.random() * names.length)]">
+            <button x-on:click="currentName = names[Math.floor(Math.random() * names.length)]">
                 Generate Name
             </button>
         </div>
